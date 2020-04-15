@@ -1,0 +1,16 @@
+{
+    "name": "karelwintersky/arris.toolkit.cdnnow",
+    "description": "Arris mFramework CDNNow Toolkit",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karel Wintersky",
+            "email": "karel.wintersky@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "curl/curl": "^2.3"
+    }
+}
