@@ -1,14 +1,16 @@
 <?php
 
-/**
- * Простой механизм доступа к API CDN Now через CURL.
- *
- */
-
 namespace Arris\Toolkit;
 
 use Curl\Curl;
 
+/**
+ * Class CDNNowToolkit
+ *
+ * Простой механизм доступа к API CDN Now через CURL
+ *
+ * @package Arris\Toolkit
+ */
 class CDNNowToolkit implements CDNNowToolkitInterface
 {
     const URL_BASE = 'https://api.cdnnow.ru/api/v1';
