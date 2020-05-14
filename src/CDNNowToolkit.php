@@ -59,7 +59,7 @@ class CDNNowToolkit implements CDNNowToolkitInterface
             'password'  =>  self::$options['password']
         ]);
 
-        $response_auth = self::$curl->response;
+        $response_auth = json_decode(self::$curl->response);
 
         //@throw error state
         if (!isset($response_auth->data)) return false;
@@ -91,7 +91,7 @@ class CDNNowToolkit implements CDNNowToolkitInterface
         }
         self::$curl->get( self::URL_BASE . self::URL_STAT, $dataset );
 
-        return self::$curl->response;
+        return json_decode(self::$curl->response);
     }
 
     /**
@@ -111,7 +111,7 @@ class CDNNowToolkit implements CDNNowToolkitInterface
 
         self::$curl->post($url, $dataset);
 
-        return self::$curl->response;
+        return json_decode(self::$curl->response);
     }
 
     public static function getState()
